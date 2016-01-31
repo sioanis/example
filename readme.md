@@ -4,7 +4,9 @@
 
 - Change directories into your project. 
 	* e.g - ```cd ~/projects/example```
-- You may need to run ```sudo``` if you are running into permission errors.
+	
+*You may need to run ```sudo``` if you are running into permission errors.*
+
 - Run ```npm install``` 
 - Run ```gulp serve``` to preview and watch for changes
 - Run ```gulp serve:test``` to run the tests in the browser
