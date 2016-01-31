@@ -31,34 +31,11 @@ $scarlet-7: rgba(208, 1, 27, 0.07);
 $scarlet-12: rgba(208, 1, 26, 0.12);
 $charcoal-grey-two: #373738;
 
+@import "mixins.scss";
+// animation
 
-
-@keyframes ellipsis {
+@include keyframes(ellipsis) {
   to {
     width: 1.25em;    
-  }
-}
-
-@-webkit-keyframes ellipsis {
-  to {
-    width: 1.25em;    
-  }
-}
-
-@-moz-keyframes ellipsis {
-  to {
-    width: 1.25em;    
-  }
-}
-
-@-o-keyframes ellipsis {
-  to {
-    width: 1.25em;    
-  }
-}
-
-@-ms-keyframes ellipsis {
-  to {
-    width: 20px;    
   }
 }
