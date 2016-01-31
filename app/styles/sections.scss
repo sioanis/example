@@ -82,13 +82,16 @@ form {
 	}
 	input {
 		height: 60px;
+	}
+	textarea {
+		height: 120px;
+	}
+
+	input, textarea {
 		color: black;
 		&:placeholder-shown {
 			color: $greyish-two;
 		}
-	}
-	textarea {
-		height: 120px;
 	}
 	button {
 		font-size: 22px;

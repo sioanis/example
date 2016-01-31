@@ -45,7 +45,9 @@ var FormValidation = Backbone.View.extend({
 	},
 	
 	onSubmit: function(e) {
-		var self = this;
+		var self   = this,
+			$req   = $('.requests'),
+			reqVal = $req.find('textarea').val();
 
 		this.eventAggregator.trigger('onSubmit');
 
@@ -58,6 +60,12 @@ var FormValidation = Backbone.View.extend({
 			$('.confirm').addClass('hide');
 			$('.success').removeClass('hide'); 
 		}, 3000);
+
+		if (reqVal.length) {
+			$req.find('.special').text(reqVal);
+		} else {
+			$req.addClass('hide');
+		}
 
 		return false;
 	},
