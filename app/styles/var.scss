@@ -1,0 +1,64 @@
+// paths 
+$icon-font-path: '../fonts/';
+$img-path: '../images/';
+
+// colors
+
+$white-one: #e2e2e2;
+$dark-sand: #ac9456;
+$warm-grey: #777777;
+$white-three: #f2f2f2;
+$white-four: #d2d2d2;
+$white-seven: #f0f0f0;
+$white-eight: #ebebeb;
+$dirt: #8b763e;
+$bright-sky-blue: #13bfff;
+$earth: #967d3c;
+$white-five: #f9f9f9;
+$pinkish-grey: #c6c6c6;
+$brownish-grey: #696969;
+$scarlet: #d0021b;
+$charcoal-grey: #363637;
+$pinkish-grey-two: #c1c1c1;
+$black-60: rgba(0, 0, 0, 0.6);
+$black-61: rgba(0, 0, 0, 0.3);
+$greyish: #a4a4a4;
+$warm-grey-two: #868686;
+$brownish-grey-two: #6b6b6b;
+$white-six: #f8f8f8;
+$greyish-two: #aaaaaa;
+$scarlet-7: rgba(208, 1, 27, 0.07);
+$scarlet-12: rgba(208, 1, 26, 0.12);
+$charcoal-grey-two: #373738;
+
+
+
+@keyframes ellipsis {
+  to {
+    width: 1.25em;    
+  }
+}
+
+@-webkit-keyframes ellipsis {
+  to {
+    width: 1.25em;    
+  }
+}
+
+@-moz-keyframes ellipsis {
+  to {
+    width: 1.25em;    
+  }
+}
+
+@-o-keyframes ellipsis {
+  to {
+    width: 1.25em;    
+  }
+}
+
+@-ms-keyframes ellipsis {
+  to {
+    width: 20px;    
+  }
+}

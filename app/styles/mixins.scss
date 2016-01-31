@@ -1,0 +1,34 @@
+@mixin roboto-light {
+	font-family: 'Roboto','Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-weight: 300;
+}
+
+@mixin roboto-medium {
+	font-family: 'Roboto','Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-weight: 500;
+}
+
+@mixin border-box {
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+@mixin transform($args) {
+	-webkit-transform: $args;
+	-ms-transform: $args;
+	-moz-transform: $args;
+	-o-transform: $args;
+	transform: $args;
+}
+
+@mixin animation($args) {
+	-webkit-animation: $args;      
+	-moz-animation: $args;      
+	-ms-animation: $args;      
+	-o-animation: $args;      
+	animation: $args;	
+}
+

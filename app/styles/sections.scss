@@ -1,0 +1,218 @@
+@import "var.scss";
+@import "mixins.scss";
+
+body {
+	@include roboto-light;
+}
+
+.hide {
+	display: none;
+}
+
+header {
+	text-align: center;
+	background: url($img-path+'restaurant-inside.jpg') 100%;
+	h1 {
+		height: 315px;
+		line-height: 315px;
+		font-family: '.HelveticaNeueDeskInterface-Regular','Helvetica Neue',Helvetica,Arial,sans-serif;
+		font-size: 40px;
+		background: $black-61;
+	}
+
+	h2 {
+		height: 65px;
+		line-height: 65px;
+		background: $black-60;
+		font-size: 20px;
+	}
+	h1, h2 {
+		margin: 0;
+		color: white;
+	}
+}
+
+.details {
+	height: 75px;
+	div {
+		line-height: 50px;
+	}
+	.date {
+		border: 2px solid $white-seven;
+		border-bottom-style: none;
+		border-top-style: none;
+	}
+	.date, .time, .people {
+		color: $charcoal-grey;
+		min-height: 50px;
+		line-height: 50px;
+		text-align: center;
+		font-size: 22px;
+		@include roboto-light;
+	}
+}
+
+form {
+	label, button {
+		width: 100%;
+	}
+
+	label {
+		position: relative;
+		max-width: 700px;
+
+		.glyphicon {
+			position: absolute;
+			right: 20px;
+    		top: 46%;
+		}
+	}
+
+	input, textarea, button {
+		background: $white-five;
+		color: $greyish-two;
+		@include roboto-light;
+		border: 1px solid $white-eight;
+		@include border-box;
+	    width: 100%;
+	    max-width: 700px;
+	    margin: 10px 0 0;
+	    font-size: 20px;
+	    padding: 10px 10px;
+	}
+	input {
+		height: 60px;
+		color: black;
+		&:placeholder-shown {
+			color: $greyish-two;
+		}
+	}
+	textarea {
+		height: 120px;
+	}
+	button {
+		font-size: 22px;
+		letter-spacing: 0.9;
+		background: $white-one;
+		color: white;
+		height: 66.1px;
+		&.valid {
+			background: $dark-sand;
+		}
+	}
+
+	.glyphicon-remove, .glyphicon-ok {
+		display: none;
+	}
+	.glyphicon-remove {
+		color: $scarlet;
+	}
+	.glyphicon-ok {
+		color: $dark-sand;
+	}
+
+	.valid .glyphicon-ok {
+		display: block;
+	}
+
+	.error {
+		input {
+			color: $charcoal-grey;
+			background: $scarlet-7;
+			border: 1px solid $scarlet-12;		
+		}
+		.glyphicon-remove {
+			display: block;
+		}
+
+	}
+
+
+}
+
+
+.form-group {
+	.confirm {
+		font-size: 24px;
+		text-align: center;
+		width: 100%;
+		height: 500px;
+
+		p {
+			position: relative;
+	    	top: 50%;
+	    	@include transform(translateY(-50%));
+	    	
+	    	&:after {
+			  overflow: hidden;
+			  display: inline-block;
+			  vertical-align: bottom;
+			  @include animation(ellipsis steps(4,end) 900ms infinite);  
+			  content: '\2026'; 
+			  font-size: 24px;
+			  width: 0;
+			}
+	    }
+	}
+	.success {
+		text-align: center;
+		
+		> div {
+			margin: 10px 0;
+		}
+
+		i {
+			font-size: 45px;
+		}
+
+		i, a {
+			color: $dark-sand;
+		}
+		h5 {
+			@include roboto-medium;
+		}
+		.requests {
+	    	margin: 30px 0 45px;
+	    }
+	}
+}
+
+
+.hold {
+	@include roboto-medium;
+}
+
+.reservation .success {
+	@include roboto-medium;
+	background: $dark-sand;
+	margin: 0;
+    height: 75px;
+    line-height: 75px;
+    color: white;
+}
+
+.legal {
+		
+	color: $warm-grey;
+	font-size: 14px;
+	line-height: 18px;
+	padding: 0 28.35px;
+	text-align: left;
+	max-width: 700px;
+	margin: 10px auto 100px;
+}
+
+
+h3, form, .details, footer {
+	text-align: center;
+}
+
+footer {
+	background: $white-six;
+	color: $warm-grey;
+	letter-spacing: 0.8px;
+	height: 105.9px;
+	line-height: 105.9px;
+	font-size: 22px;
+	p { margin: 0; }
+}
