@@ -21,7 +21,7 @@ var FormValidation = Backbone.View.extend({
 
 		switch (type) {
 			case 'text' : 
-				valid = /\w/g.test(value);
+				valid = /\w{2,}/g.test(value);
 				break;
 			case 'tel' :
 				valid = /\d{10}/g.test(value.replace(/[^\d]/g, ''));
