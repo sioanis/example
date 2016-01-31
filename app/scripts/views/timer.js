@@ -30,6 +30,7 @@ require(['scripts/views/formValidation'], function() {
 	        if (--timer < 0) {
 
 	            $('input').val('');
+	            $('label:not(.requests)').removeClass('valid');
 	            
 		    	self.clearTimer();
 
