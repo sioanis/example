@@ -45,6 +45,8 @@ var FormValidation = Backbone.View.extend({
 	},
 	
 	onSubmit: function(e) {
+		if ($('label').not('.valid').length) { return false; }
+
 		var self   = this,
 			$req   = $('.requests'),
 			reqVal = $req.find('textarea').val();
