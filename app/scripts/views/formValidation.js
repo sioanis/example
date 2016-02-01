@@ -10,9 +10,16 @@ var FormValidation = Backbone.View.extend({
 		'click button' : 'checkForErrors' 
 
 	},
+	initialize: function() {
+		var self = this;
+
+		_.each($('input'), function(elm) {
+			self.validateField($(elm));
+		});
+	},
 
 	validateField: function(e) {
-		var $e      = $(e.currentTarget),
+		var $e      = e.currentTarget ? $(e.currentTarget) : e,
 			$parent = $e.parent(),
 			name    = $parent.attr('class'),
 			type    = $e.attr('type'),
