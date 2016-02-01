@@ -1,7 +1,7 @@
 @import "mixins.scss";
 // animation
 
-@include keyframes(ellipsis) {
+@include keyframes(#{ellipsis}) {
   to {
     width: 1.25em;    
   }
